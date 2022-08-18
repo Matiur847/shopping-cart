@@ -54,6 +54,14 @@ document.getElementById('check-out').addEventListener('click', function(){
 
 document.getElementById('buy').addEventListener('click', function(){
     alert('Order Place Successfully');
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('main-container').style.display = 'block';
+});
+document.getElementById('remove-iphone').addEventListener('click', function(){
+    document.getElementById('phone-remove').style.display = 'none';
+});
+document.getElementById('remove-case').addEventListener('click', function(){
+    document.getElementById('case-remove').style.display = 'none';
 });
 
 
@@ -74,7 +82,7 @@ document.getElementById('buy').addEventListener('click', function(){
 
 
 
-// function handleCaseChange(isIncrease) {
+// function handleCaseChange(isI ncrease) {
 //     console.log('phone minuse');
 //     const phoneInput =  document.getElementById('case-count');
 //     const phoneCount = parseInt(phoneInput.value);
